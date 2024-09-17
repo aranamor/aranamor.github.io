@@ -14,7 +14,7 @@ let i = 0;
 let j = 0;
 let currentWord = '';
 let isDeleting = false;
-let typeSpeed = 150;
+let typeSpeed = 100;
 
 function type() {
   const typewriter = document.getElementById('typewriter');
@@ -34,7 +34,7 @@ function type() {
 
     if (j === words[i].length) {
       isDeleting = true;
-      typeSpeed = 100; // Speed up when deleting
+      typeSpeed = 125; // Speed up when deleting
     }
 
     if (isDeleting && j === 0) {

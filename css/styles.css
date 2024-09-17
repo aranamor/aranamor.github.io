@@ -69,9 +69,12 @@ main {
 /* CSS for the intro-text */
 .intro-text {
   font-size: 2rem;
-  line-height: 1.5;
-  font-weight: normal;
-  padding-left: 300px; /* Align text correctly considering the sidebar */
+  line-height: 1;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+  background-color: #2a8fe2;
+  padding-top: 5px;
+
 }
 
 /* Typing effect */
@@ -79,8 +82,8 @@ main {
   content: '|'; /* Cursor */
   font-weight:400;
   font-size: 2rem;
-  color: white;
-  animation: blink 0.8s step-start infinite;
+  color: rgb(0, 38, 255);
+  animation: blink 1s step-start infinite;
 }
 
 /* Blinking cursor effect */
@@ -112,8 +115,8 @@ main {
 }
 
 .hero span {
-  color: #004d6f;
-  background-color: white;
+  color: #9a118c;
+  background-color:#2a8fe2;
   padding: 5px;
 
 }
