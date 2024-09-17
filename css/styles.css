@@ -66,6 +66,30 @@ main {
   color: #007bff;
 }
 
+/* CSS for the intro-text */
+.intro-text {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: normal;
+  padding-left: 300px; /* Align text correctly considering the sidebar */
+}
+
+/* Typing effect */
+.typewrite::after {
+  content: '|'; /* Cursor */
+  font-weight:400;
+  font-size: 2rem;
+  color: white;
+  animation: blink 0.8s step-start infinite;
+}
+
+/* Blinking cursor effect */
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
 /* Hero Section */
 .hero {
   height: 100vh;
