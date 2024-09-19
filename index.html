@@ -16,8 +16,12 @@
   <aside class="sidebar">
     <div class="profile">
       <img src="photos\pf.jpg" alt="Profile Photo">
-      <h2>Swapnajit Debnath</h2>
-      <p>Engineering Undergraduate</p>
+      <nav class="menu">
+        <div class="name">
+          <h2><a href="#intro">Swapnajit Debnath</a></h2>
+          <p>Engineering Undergraduate</p>
+        </div>
+      </nav>
     </div>
     <nav class="menu">
       <ul>
@@ -35,7 +39,7 @@
   <!-- Main Content -->
   <main>
     <!-- Hero Section / Header -->
-    <section class="hero">
+    <section id="intro" class="hero">
       <h1>Hi, I'm <span>Swapnajit Debnath</span></h1>
       <div class="intro-text">
         <span class="typewrite" id="typewriter"></span>
@@ -67,9 +71,22 @@
 
     <!-- Experience Section -->
     <section id="experience" class="section">
-        <h2>Experience</h2>
-        <p>Under-Construction.</p>
-    </section>
+      <div class="experience-title">
+        <h2>Work Experience</h2>
+
+      </div>
+      
+      <div class="experience-card">
+        <h3>Computer Vision Intern</h3>
+        <p><strong>Cubots (NIT Agartala)</strong> | Sep 2023 - Dec 2023</p>
+        <ul>
+          <li>Developed a low-light object detection model using PyTorch and TensorFlow, achieving 85% accuracy in challenging lighting conditions.</li>
+          <li>Integrated the model with Raspberry Pi and Nvidia Jetson Nano, demonstrating adaptability to various hardware platforms and edge computing.</li>
+          <li>Optimized data processing pipelines, reducing model training time by 30%, showcasing skills in performance optimization.</li>
+          <li>Collaborated on projects involving Coral AI and machine learning, enhancing expertise in applied AI and team-based development.</li>
+        </ul>
+      </div>
+    </section>    
 
     <!-- Projects Section -->
     <section id="projects" class="section">
