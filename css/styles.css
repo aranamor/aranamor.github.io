@@ -214,13 +214,13 @@ main {
 #experience {
   padding: 50px;
   background-color: #f2f2f2; /* Light gray background */
-  background-image: url("pexels-timmossholder-2096622.jpg"); /*Optional hexagonal design */
+  background-image: url("a.jpg"); /*Optional hexagonal design */
   background-size: 100%;
 }
 
 .experience-title h2 {
   font-size: 3em;
-  color: #02e5fe;
+  color: #520b5f;
   margin-bottom: 20px;
   padding-left: 360px;
 
