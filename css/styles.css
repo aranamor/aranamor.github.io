@@ -193,22 +193,6 @@ main {
   scroll-snap-align: start; /* Snaps each section to the top */
 }
 
-/* .section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  padding-left: 360px;
-}
-
-.section p {
-  max-width: 600px;
-  padding-left: 360px;
-  font-size: 1.2rem;
-} */
-
-
-
-
-
 
 /* Experience Section Styling */
 #experience {
@@ -259,6 +243,29 @@ main {
   font-size: 1em;
   color: #000000;
 }
+
+/* Experience Section Styling ENDS HERE*/
+
+/*Download section*/
+#resume {
+  padding: 50px;
+  background-color: #f2f2f2; /* Light gray background */
+  background-image: url("a.jpg"); /*Optional hexagonal design */
+  background-size: 100%;
+}
+
+#resume h2 {
+  font-size: 2.5rem;
+  color: #520b5f;
+  margin-bottom: 20px;
+  padding-left: 360px;
+
+}
+
+
+
+
+
 
 
 /* Smooth scrolling */
