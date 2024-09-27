@@ -25,11 +25,12 @@ main {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #e8e8e8;
+  background-color: #7a69d0;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
+  z-index: 100;
 }
 
 .sidebar .profile img {
@@ -89,7 +90,6 @@ main {
   line-height: 1;
   font-weight: bolder;
   color: rgb(0, 0, 0);
-  background-color: #2a8fe2;
   padding-top: 5px;
 
 }
@@ -113,7 +113,7 @@ main {
 /* Hero Section */
 .hero {
   height: 100vh;
-  background-color: #2a8fe2;
+  background-color: #162979;
   color: white;
   display: flex;
   flex-direction: column;
@@ -132,8 +132,7 @@ main {
 }
 
 .hero span {
-  color: #9a118c;
-  background-color:#2a8fe2;
+  color: #c124b1;
   padding: 5px;
 
 }
@@ -187,7 +186,7 @@ main {
   min-height: 100vh; /* Ensures full viewport height */
   padding: 50px;
   background-color: #3bc680;
-  color: #333;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   scroll-snap-align: start; /* Snaps each section to the top */
@@ -204,7 +203,7 @@ main {
 
 .experience-title h2 {
   font-size: 3em;
-  color: #520b5f;
+  color: #f7f7f7;
   margin-bottom: 20px;
   padding-left: 360px;
 
@@ -241,27 +240,8 @@ main {
 .experience-card ul li {
   margin-bottom: 10px;
   font-size: 1em;
-  color: #000000;
+  color: #342a6a;
 }
-
-/* Experience Section Styling ENDS HERE*/
-
-/*Download section*/
-/* #resume {
-  padding: 50px;
-  background-color: #f2f2f2; 
-  background-image: url("a.jpg");
-  background-size: 100%;
-} */
-
-/* #resume h2 {
-  font-size: 2.5rem;
-  color: #520b5f;
-  margin-bottom: 20px;
-  padding-left: 360px;
-
-} */
-
 
 
 

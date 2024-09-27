@@ -55,3 +55,38 @@ function type() {
 window.onload = () => {
   type();
 };
+
+
+
+// Function to initialize Vanta.js when a section becomes visible
+function applyVantaEffect(section) {
+  window.VANTA.NET({
+    el: section,  // The section element to apply Vanta.js
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    color: 0xc70524,
+    backgroundColor: 0xd0d40,
+    points: 10.00,    // Reduced for better performance
+    spacing: 18.00,  // Increase spacing for better performance
+  });
+}
+
+// Intersection Observer setup
+let observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !entry.target.vantaApplied) {
+      entry.target.vantaApplied = true;  // Flag to ensure it's only applied once
+      applyVantaEffect(entry.target);    // Apply Vanta.js to the visible section
+    }
+  });
+});
+
+// Observe all sections with the 'vanta-section' class
+document.querySelectorAll('.section').forEach(section => {
+  observer.observe(section);
+});
