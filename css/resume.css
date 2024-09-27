@@ -13,12 +13,35 @@
 
 }
 
+.resume-card {
+  background-color: rgb(226, 226, 226);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow */
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 360px 20px;
+}
+
+.resume-card h3 {
+  color: #0f8b8f; /* Title color */
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.resume-card p {
+  color: #000000;
+  font-size: 1em;
+  margin-bottom: 20px;
+  text-align: start ;
+  text-align: justify;
+}
+
 .center {
   display: flex;
   padding-left: 360px;
 }
 .download-btn {
-  width:200px;
+  width:300px;
   height:60px;
   text-align:center;
   cursor:pointer;
