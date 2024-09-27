@@ -1,0 +1,57 @@
+#resume {
+  padding: 50px;
+  background-color: #f2f2f2; /* Light gray background */
+  background-image: url("a.jpg"); /*Optional hexagonal design */
+  background-size: 100%;
+}
+
+#resume h2 {
+  font-size: 2.5rem;
+  color: #520b5f;
+  margin-bottom: 20px;
+  padding-left: 360px;
+
+}
+
+.center {
+  display: flex;
+  padding-left: 360px;
+}
+.download-btn {
+  width:200px;
+  height:60px;
+  text-align:center;
+  cursor:pointer;
+  margin:20px 0px;
+  border-radius:10px;
+  box-sizing:border-box;
+  overflow:hidden;
+}
+.download-btn {
+  border:5px solid #520b5f;
+}
+.download-btn div {
+  width:100%;
+  height:100%;
+  font-size:15px;
+  font-weight:600;
+  text-transform:uppercase;
+  line-height:50px;
+}
+.download-btn .top {
+  background:#520b5f;
+  color: #ffffff;
+}
+
+.download-btn .bottom {
+  background:#eee;
+  color:#520b5f;
+  text-decoration: none;
+  color:inherit;
+}
+.download-btn .top {
+  transition:all 300ms ease-in-out;
+}
+.download-btn:hover .top {
+  margin-top:-50px;
+}

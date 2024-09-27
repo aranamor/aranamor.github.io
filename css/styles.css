@@ -247,23 +247,20 @@ main {
 /* Experience Section Styling ENDS HERE*/
 
 /*Download section*/
-#resume {
+/* #resume {
   padding: 50px;
-  background-color: #f2f2f2; /* Light gray background */
-  background-image: url("a.jpg"); /*Optional hexagonal design */
+  background-color: #f2f2f2; 
+  background-image: url("a.jpg");
   background-size: 100%;
-}
+} */
 
-#resume h2 {
+/* #resume h2 {
   font-size: 2.5rem;
   color: #520b5f;
   margin-bottom: 20px;
   padding-left: 360px;
 
-}
-
-
-
+} */
 
 
 
@@ -278,12 +275,6 @@ body, html {
   margin: 0;
   padding: 0;
 }
-
-
-
-
-
-
 
 
 /*Basic Formatting, Delete when needed*/
