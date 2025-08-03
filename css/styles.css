@@ -13,7 +13,7 @@ body {
 }
 
 main {
-  scroll-snap-type: y mandatory; /* Enables fixed-length scrolling */
+  scroll-snap-type: y mandatory; /* Enables fix-length scrolling */
   overflow-y: scroll;
   height: 100vh;
 }
@@ -340,18 +340,6 @@ body, html {
 
 /*Basic Formatting, Delete when needed*/
 
-
-#about h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  padding-left: 360px;
-}
-
-#about p {
-  max-width: 600px;
-  padding-left: 360px;
-  font-size: 1.2rem;
-}
 #projects h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
@@ -374,25 +362,73 @@ body, html {
   padding-left: 360px;
   font-size: 1.2rem;
 }
-#education h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  padding-left: 360px;
-}
 
-#education p {
-  max-width: 600px;
-  padding-left: 360px;
-  font-size: 1.2rem;
+
+/* Contact Section Styling */
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
 }
 #contact h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  padding-left: 360px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    padding-left: 360px;
 }
 
-#contact p {
-  max-width: 600px;
-  padding-left: 360px;
-  font-size: 1.2rem;
+.contact-info-card {
+    background-color: rgb(226, 226, 226);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    margin: 0 360px;
+    max-width: 600px;
+    color: #000000;
+}
+
+.contact-info-card h3 {
+    color: #0f8b8f;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #0f8b8f;
+    padding-bottom: 10px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column; /* This is the key change */
+    gap: 20px; /* Adds space between the paragraph and list */
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contact-details p {
+    font-size: 1.1em;
+    margin: 0;
+    text-align: justify;
+}
+
+.contact-details ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-details ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.contact-details ul li i {
+    color: #520b5f;
+    margin-right: 15px;
+    font-size: 1.5em;
+}
+
+.contact-details ul li a {
+    color: inherit;
+    text-decoration: none;
 }
