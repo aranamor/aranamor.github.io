@@ -163,10 +163,6 @@ main {
 }
 
 
-.social-links a:hover {
-  color: #004d6f;
-}
-
 .buttons a {
   padding: 10px 20px;
   margin: 10px;
@@ -192,55 +188,66 @@ main {
 }
 
 
-/* Experience Section Styling */
-#experience {
-  padding: 50px;
-  background-size: 100%;
-}
-
+/* General Card Styling */
 .experience-title h2 {
-  font-size: 3em;
+  font-size: 2.5em;
   color: #f7f7f7;
   margin-bottom: 20px;
   padding-left: 360px;
+}
 
+.experience-card, .project-card {
+  background-color: rgb(226, 226, 226);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
 .experience-card {
-  background-color: rgb(226, 226, 226);
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow */
-  padding: 20px;
   max-width: 700px;
-  margin: 0 auto 50px;
+  margin: 0 360px 20px;
 }
 
-.experience-card h3 {
-  color: #0f8b8f; /* Title color */
-  font-size: 1.5em;
+.project-card {
+  flex: 1 1 45%;
+  max-width: 45%;
+}
+
+.experience-card h3, .project-card h3 {
+  color: #0f8b8f;
+  font-size: 1.2em;
   margin-bottom: 10px;
 }
 
-.experience-card p {
+.experience-card p, .project-card p {
   color: #000000;
-  font-size: 1em;
+  font-size: 0.9em;
   margin-bottom: 20px;
-  text-align: start ;
+  text-align: start;
 }
 
-.experience-card ul {
+.experience-card ul, .project-card ul {
   list-style-type: disc;
   margin-left: 20px;
   text-align: justify;
 }
 
-.experience-card ul li {
-  margin-bottom: 10px;
-  font-size: 1em;
+.experience-card ul li, .project-card ul li {
+  margin-bottom: 5px;
+  font-size: 0.9em;
   color: #342a6a;
 }
 
-
+/* Container for projects to enable side-by-side display */
+.projects-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 360px;
+    max-width: calc(100% - 250px);
+    box-sizing: border-box;
+}
 
 /* Smooth scrolling */
 html {
@@ -257,17 +264,6 @@ body, html {
 /*Basic Formatting, Delete when needed*/
 
 
-#about h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  padding-left: 360px;
-}
-
-#about p {
-  max-width: 600px;
-  padding-left: 360px;
-  font-size: 1.2rem;
-}
 #projects h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
