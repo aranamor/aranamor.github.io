@@ -188,7 +188,7 @@ main {
 }
 
 
-/* General Card Styling */
+/* General Section Titles */
 .experience-title h2 {
   font-size: 2.5em;
   color: #f7f7f7;
@@ -196,57 +196,134 @@ main {
   padding-left: 360px;
 }
 
-.experience-card, .project-card {
+/* Experience Section Styling */
+#experience .experience-card {
+  max-width: 700px;
+  margin: 0 360px 20px;
   background-color: rgb(226, 226, 226);
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
 
-.experience-card {
-  max-width: 700px;
-  margin: 0 360px 20px;
-}
-
-.project-card {
-  flex: 1 1 45%;
-  max-width: 45%;
-}
-
-.experience-card h3, .project-card h3 {
+#experience .experience-card h3 {
   color: #0f8b8f;
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin-bottom: 10px;
 }
 
-.experience-card p, .project-card p {
+#experience .experience-card p {
   color: #000000;
-  font-size: 0.9em;
+  font-size: 1em;
   margin-bottom: 20px;
   text-align: start;
 }
 
-.experience-card ul, .project-card ul {
+#experience .experience-card ul {
   list-style-type: disc;
   margin-left: 20px;
   text-align: justify;
 }
 
-.experience-card ul li, .project-card ul li {
+#experience .experience-card ul li {
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: #342a6a;
+}
+
+/* Projects Section Styling */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+  padding-left: 360px;
+  max-width: calc(100% - 250px);
+  box-sizing: border-box;
+}
+
+.project-card {
+  background-color: rgb(226, 226, 226);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1 1 calc(50% - 10px);
+  max-width: calc(50% - 10px);
+}
+
+.project-card h3 {
+  color: #0f8b8f;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.project-card ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  text-align: justify;
+}
+
+.project-card ul li {
   margin-bottom: 5px;
   font-size: 0.9em;
   color: #342a6a;
 }
 
-/* Container for projects to enable side-by-side display */
-.projects-container {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding-left: 360px;
-    max-width: calc(100% - 250px);
-    box-sizing: border-box;
+/* Skills Section Styling */
+#skills h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  padding-left: 360px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+  padding-left: 360px;
+  max-width: calc(100% - 250px);
+  box-sizing: border-box;
+}
+
+.skill-card {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 8.5px;
+  flex: 1 1 calc(33.333% - 10px);
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.skill-card h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #041091;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+}
+
+.skill-card h3 i {
+  margin-right: 8px;
+  color: #0f8b8f;
+}
+
+.skill-card ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.skill-card ul li {
+  font-size: 0.9em;
+  color: #c30808;
+  margin-bottom: 3px;
 }
 
 /* Smooth scrolling */
@@ -264,6 +341,17 @@ body, html {
 /*Basic Formatting, Delete when needed*/
 
 
+#about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  padding-left: 360px;
+}
+
+#about p {
+  max-width: 600px;
+  padding-left: 360px;
+  font-size: 1.2rem;
+}
 #projects h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
